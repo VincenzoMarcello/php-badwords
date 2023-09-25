@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP Badwords</title>
+  </head>
+  <body>
+    <!-- FACCIAMO UN FORM CON DIREZIONE RESULT.PHP E CON IL METODO GET -->
+    <form method="GET" action="./result.php">
+      <!-- DIAMO AL DATO DELL'INPUT UN NAME IN MANIERA TALE DA SALVARLO CON IL GET -->
+      <h2>Inserisci un paragrafo</h2>
+      <input type="textarea" name="userText" />
+      <!-- FACCIAMO LO STESSO CON LA PAROLA DA CENSURARE -->
+      <h2>Inserisci la parola da censurare</h2>
+      <input type="text" name="censored" />
+      <div style="padding-top: 20px">
+        <!-- METTIAMO UN PULSANTE CHE INVIA I DATI DEL FORM AL PHP -->
+        <button>Invia i dati</button>
+      </div>
+    </form>
+  </body>
+</html>
