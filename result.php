@@ -4,7 +4,7 @@
   $censored = $_GET["censored"];
 
 // # TRAMITE IL REPLACE METTIAMO AL POSTO DELLA PAROLA CENSURATA TRE "*"
-  $result = str_replace($censored, "***", $userText) ;
+  $result = str_replace($censored, "***", $userText); 
   ?>
 
   <!DOCTYPE html>
@@ -25,7 +25,7 @@
     <p><?= strlen($userText) ?></p>
 
     <!-- STAMPIAMO IL PARAGRAFO CENSURATO -->
-    <h2>Queste paroline non le puoi dire:</h2>
+    <h2>Il tuo paragrafo censurato è:</h2>
     <p><?php echo $result ?></p>
 
     <!-- E LA NUOVA LUNGHEZZA -->
