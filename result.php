@@ -1,10 +1,10 @@
 <?php
 // # DICHIARIAMO DUE VARIABILI CHE CONTENGONO I VALORI INVIATI DAL FORM
-$userText = $_GET["userText"];
+$user_text = $_GET["user-text"];
 $censored = $_GET["censored"];
 
 // # TRAMITE IL REPLACE METTIAMO AL POSTO DELLA PAROLA CENSURATA TRE "*"
-$result = str_replace($censored, "***", $userText);
+$result = str_replace($censored, "***", $user_text);
 ?>
 
 <!DOCTYPE html>
@@ -20,13 +20,13 @@ $result = str_replace($censored, "***", $userText);
   <!-- STAMPIAMO IL PARAGRAFO COSI' COM'é -->
   <h2>Il tuo paragrafo è:</h2>
   <p>
-    <?= $userText ?>
+    <?= $user_text ?>
   </p>
 
   <!-- E LA SUA LUNGHEZZA -->
   <h2>La sua lunghezza è:</h2>
   <p>
-    <?= strlen($userText) ?>
+    <?= strlen($user_text) ?>
   </p>
 
   <!-- STAMPIAMO IL PARAGRAFO CENSURATO -->
